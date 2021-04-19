@@ -1,0 +1,165 @@
+/**** Global Styles
+*************************/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+input:checked {
+  border: 6px solid #184d47;
+}
+/**** Header Styles
+*************************/
+.header-content {
+  background-color: #184d47;
+  /* background-image: url("../images/restaurant.jpg");
+  background-size: cover;
+  background-position: top right; */
+}
+
+.header-h2,
+.header-p {
+  color: #f4eee8;
+  text-align: center;
+}
+
+h1 {
+  color: #fad586;
+  font-size: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.header-h2 {
+  margin-bottom: 5px;
+}
+
+.header-p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/**** Main Styles
+*************************/
+.main-content {
+  background-color: #96bb7c;
+}
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+.form-label {
+  color: darkblue;
+  padding: 20px;
+}
+.form-input {
+  margin: 20px;
+  color: #c64756;
+  -webkit-text-fill-color: #c64756;
+}
+
+.form-radio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0px;
+}
+.button {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #fad586;
+  color: #2b4f60;
+  border: 2px solid #2b4f60;
+}
+.button:hover {
+  background-color: rgba(250, 213, 134, 80%);
+}
+
+/**** Footer Styles
+**************************/
+.footer-content {
+  background-color: #c64756;
+  color: #fad586;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+}
+
+.list-content {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  padding: 0px;
+  list-style-type: none;
+}
+a {
+  color: #fad586;
+}
+a:hover {
+  color: rgba(250, 213, 134, 60%);
+}
+
+/**** Responsive Styles
+**************************/
+@media screen and (min-width: 420px) {
+  h1 {
+    font-size: 90px;
+    margin-bottom: 5px;
+  }
+  .header-p {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  .list-content {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .form-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-label {
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-input {
+    margin: 10px;
+    padding: 0px;
+  }
+  .form-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 10px 0px; */
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .form-label {
+    line-height: 1;
+  }
+}
