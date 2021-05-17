@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Restaurant/Feedback Form</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
         <script type="module" src="script.js"  defer></script>
     </head>
 
@@ -21,12 +22,12 @@
             <form class="content-wrap" >
                 <div class="form-content">
                    
-                        <label class="form-label" for="name">Enter your Name: </label>
-                        <input class="form-input" type="text" name="name" id="name" placeholder="Robin Singla" required>
+                        <label class="form-label" for="name">Name: </label>
+                        <input class="form-input border-css" type="text" name="name" id="name" placeholder="Robin Singla" required>
                    
 
-                        <label class="form-label" for="email">Enter your Email: </label>
-                        <input class="form-input" type="email" name="email" id="email" placeholder="rr@gmail.com" required>
+                        <label class="form-label" for="email">Email: </label>
+                        <input class="form-input border-css" type="email" name="email" id="email" placeholder="rr@gmail.com" required>
                    
                         <p class="form-label">Gender:</p>
                         <div class="form-radio">
@@ -42,26 +43,13 @@
                         </div>
 
                         <p class="form-label">Age:</p>
-                        <div class="form-radio">
-                            <div class="form-input">
-                                <input  type="radio" name="age" id="14-year" value="Less than 14 years" >
-                                <label   for="14-year">Less than 14 years </label>
-                                 
-                            </div>
-                            <div class="form-input">
-                                <input  type="radio" name="age" id="25-year" value="14-25 years" >
-                                <label  for="25-year">14-25 years </label>
-                            </div>
-                            <div class="form-input">
-                                <input  type="radio" name="age" id="40-year" value="25-40 years" >
-                                <label  for="40-year">25-40 years </label>
-                            </div>
-                            <div class="form-input">
-                                <input  type="radio" name="qge" id="above" value="Above 40 years" >
-                                <label  for="above">Above 40 years </label>
-                            </div>
-                        </div>
-
+                        <select class="form-select" id="age" name="Age">
+                            <option class="form-select" value="select">--Select--</option>
+                            <option class="form-select" value="Less than 14 years">Less than 14 years</option>
+                            <option class="form-select" value="14-25 years">14-25 years</option>
+                            <option class="form-select" value="25-40 years">25-40 years</option>
+                            <option class="form-select" value="Above 40 years">Above 40 years</option>
+                        </select>
 
                         <p class="form-label">Veg/ Non-Veg:</p>
                         <div class="form-radio">
@@ -77,82 +65,38 @@
                         </div>
                    
 
-
-                        <p class="form-label">Rate out of 5:</p>
-                        <div class="form-radio">
-                            <div class="form-input">
-                                <input type="radio" name="rate" id="1" value="1"  >
-                                <label for="1">1 </label>                         
-                            </div>
-                            <div class="form-input">
-                                <input type="radio" name="rate" id="2" value="2" >
-                                <label for="2">2 </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="rate" id="3" value="3" >
-                                <label for="3">3 </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="rate" id="4" value="4" >
-                                <label for="4">4 </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="rate" id="5" value="5" >
-                                <label for="5">5 </label>
-                            </div>
-                        </div>
-
-
+                       
+                        
 
                         <p class="form-label">How often do you go out for lunch/dinner ?</p>
-                        <div class="form-radio">
-                            <div class="form-input" >
-                                <input type="radio" name="visit-outside" id="twice-week" value="twice a week"  >
-                                <label for="twice-week">twice a week </label>                         
-                            </div>
-                            <div class="form-input"  >
-                                <input type="radio" name="visit-outside" id="once-week" value="once a week" >
-                                <label for="once-week">once a week </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-outside" id="twice-month" value="twice a month" >
-                                <label for="twice-month">twice a month </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-outside" id="once-month" value="once a month" >
-                                <label for="once-month">once a month </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-outside" id="rare" value="rare" >
-                                <label for="rare">rare </label>
-                            </div>
-                        </div>
+                        <select class="form-select" id='visit-outside' name='visit-outside'>
+                            <option class="form-select" value="select">--Select--</option>
+                            <option class="form-select" value="twice a week">Twice a week</option>
+                            <option class="form-select" value="once a week">Once a week</option>
+                            <option class="form-select" value="twice a month">Twice a month</option>
+                            <option class="form-select" value="once a month">Once a month</option>
+                            <option class="form-select" value="rare">Rare</option>
 
-
+                        </select>
 
                         <p class="form-label">How often do you prefer to visit here ?</p>
-                        <div class="form-radio">
-                            <div class="form-input" >
-                                <input type="radio" name="visit-here" id="twice-week-here" value="twice a week"  >
-                                <label for="twice-week-here">twice a week </label> 
-                            </div>
-                            <div class="form-input"  >
-                                <input type="radio" name="visit-here" id="once-week-here" value="once a week" >
-                                <label for="once-week-here">once a week </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-here" id="twice-month-here" value="twice a month" >
-                                <label for="twice-month-here">twice a month </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-here" id="once-month-here" value="once a month" >
-                                <label for="once-month-here">once a month </label>
-                            </div>
-                            <div class="form-input" >
-                                <input type="radio" name="visit-here" id="rare-here" value="rare" >
-                                <label for="rare-here">rare </label>
-                            </div>
+                        <select class="form-select" id="visit-here" name="visit-here">
+                            <option class="form-select" value="select">--Select--</option>
+                            <option class="form-select" value="twice a week">Twice a week</option>
+                            <option class="form-select" value="once a week">Once a week</option>
+                            <option class="form-select" value="twice a month">Twice a month</option>
+                            <option class="form-select" value="once a month">Once a month</option>
+                            <option class="form-select" value="rare">Rare</option>
+
+                        </select>
+
+                        <p class="form-label">Rate out of 10:</p>
+                        <div class="form-input input-range">
+                            <input  id="rate" name="rate" type="range" value="0" min="0" max="10" 
+                            oninput="document.getElementById('rateLabel').innerHTML = this.value">
+                            <label id="rateLabel">0</label>
                         </div>
+
                     </div>
                     <button class="button" type="submit">
                         Submit
@@ -167,8 +111,10 @@
             <div class="content-wrap">
                 <h2>Social Media</h2>
                 <ul class="list-content">
-                    <li class="list-item"><a href="#" target="_blank">Contact Us</a></li>
-                    <li class="list-item"><a href="#" target="_blank">Instagram</a></li>
+                    <a href="#" class="fa fa-facebook"></a>  
+                    <a href="#" class="fa fa-twitter"></a>      
+                    <a href="#" class="fa fa-linkedin"></a>  
+                    <a href="#" class="fa fa-instagram"></a> 
                 </ul>
             </div>
             

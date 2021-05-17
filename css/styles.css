@@ -26,9 +26,6 @@ input:checked {
 *************************/
 .header-content {
   background-color: #184d47;
-  /* background-image: url("../images/restaurant.jpg");
-  background-size: cover;
-  background-position: top right; */
 }
 
 .header-h2,
@@ -64,19 +61,45 @@ h1 {
 }
 .form-label {
   color: darkblue;
+  font-size: 20px;
+  margin: 20px;
   padding: 20px;
+  line-height: 1.25;
 }
+
 .form-input {
   margin: 20px;
   color: #c64756;
+  caret-color: red;
+  align-items: center;
   -webkit-text-fill-color: #c64756;
 }
 
+.border-css {
+  background: #f4eee8;
+  padding-left: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 50px;
+}
+.form-select {
+  margin: 20px;
+  padding: 20px;
+  width: fit-content;
+  color: #c64756;
+  caret-color: red;
+  -webkit-text-fill-color: #c64756;
+}
 .form-radio {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 10px 0px;
+}
+.input-range {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 5px;
 }
 .button {
   display: block;
@@ -106,15 +129,15 @@ h2 {
 .list-content {
   display: flex;
   justify-content: space-evenly;
-  font-size: 15px;
-  padding: 0px;
+  padding: 25px;
   list-style-type: none;
 }
 a {
-  color: #fad586;
+  color: #f4eee8;
+  text-decoration: none;
 }
 a:hover {
-  color: rgba(250, 213, 134, 60%);
+  color: rgba(244, 238, 232, 60%);
 }
 
 /**** Responsive Styles
@@ -132,9 +155,6 @@ a:hover {
   h2 {
     font-size: 50px;
   }
-  .list-content {
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 370px) {
@@ -149,6 +169,9 @@ a:hover {
   .form-input {
     margin: 10px;
     padding: 0px;
+  }
+  .border-css {
+    padding-left: 10px;
   }
   .form-radio {
     display: flex;
