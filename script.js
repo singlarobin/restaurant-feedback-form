@@ -29,6 +29,9 @@ btn.addEventListener("click",(e)=>{
     let visitHereElement=document.getElementById("visit-here");
     visitHere=visitHereElement.options[visitHereElement.selectedIndex].text;
 
+
+    location.href='submit.html'
+
     console.log(name," ",email," ",gender," ",age," ",foodType," ",rate," ",visitOutside," ",visitHere);
 })
 
